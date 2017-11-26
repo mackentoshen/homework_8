@@ -752,7 +752,7 @@ button:hover {
   margin-bottom: 1.88rem;
   position: relative;
 }
-/* line 23, ../scss/components/_circle-list.scss */
+/* line 21, ../scss/components/_circle-list.scss */
 .expirience-container .expirience-list .circe-big .circle-small {
   width: 100px;
   height: 100px;
@@ -763,7 +763,7 @@ button:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 33, ../scss/components/_circle-list.scss */
+/* line 31, ../scss/components/_circle-list.scss */
 .expirience-container .expirience-list .circe-big .circle-small i {
   color: white;
   position: absolute;
@@ -772,18 +772,18 @@ button:hover {
   transform: translate(-50%, -50%);
   font-size: 3.5rem;
 }
-/* line 47, ../scss/components/_circle-list.scss */
+/* line 44, ../scss/components/_circle-list.scss */
 .expirience-container .expirience-list .expirience-content .numbers, .expirience-container .expirience-list .expirience-content .meanings {
   color: white;
   font: 300 3rem/1.5rem "Oxygen", sans-serif;
   text-align: center;
 }
-/* line 53, ../scss/components/_circle-list.scss */
+/* line 50, ../scss/components/_circle-list.scss */
 .expirience-container .expirience-list .expirience-content .meanings {
   font: 300 1.13rem/1.5rem "Oxygen", sans-serif;
   margin-top: 1rem;
 }
-/* line 62, ../scss/components/_circle-list.scss */
+/* line 59, ../scss/components/_circle-list.scss */
 .expirience-container .expirience-list ~ .expirience-list .circe-big:before {
   width: 4.4rem;
   height: .7rem;
@@ -1684,4 +1684,47 @@ a {
 /* line 124, ../scss/layouts/_footer.scss */
 .pinterest {
   background-color: #a30834;
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 9, ../scss/media/_laptop.scss */
+  .header-top .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* line 17, ../scss/media/_laptop.scss */
+  .header-bottom .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  /* line 27, ../scss/media/_laptop.scss */
+  .wp-purchase-section {
+    background-color: #02baab;
+    padding: 3rem 0;
+  }
+  /* line 31, ../scss/media/_laptop.scss */
+  .wp-purchase-section .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* line 38, ../scss/media/_laptop.scss */
+  .expirience-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  /* line 44, ../scss/media/_laptop.scss */
+  .team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
