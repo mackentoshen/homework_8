@@ -279,58 +279,59 @@ button:hover {
 /* line 23, ../scss/components/_carousel.scss */
 .jumbotron {
   position: absolute !important;
-  top: 10%;
-  left: 15%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: transparent;
   text-align: center;
 }
-/* line 30, ../scss/components/_carousel.scss */
+/* line 31, ../scss/components/_carousel.scss */
 .jumbotron .jumbotron-btn {
   margin-top: 6.25rem;
 }
 
-/* line 35, ../scss/components/_carousel.scss */
+/* line 36, ../scss/components/_carousel.scss */
 .carousel-aside {
   margin-bottom: 2rem;
 }
-/* line 39, ../scss/components/_carousel.scss */
+/* line 40, ../scss/components/_carousel.scss */
 .carousel-aside .control-wrapper {
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
-/* line 45, ../scss/components/_carousel.scss */
+/* line 46, ../scss/components/_carousel.scss */
 .carousel-aside .carousel-control-prev, .carousel-aside .carousel-control-next {
   position: relative;
 }
-/* line 48, ../scss/components/_carousel.scss */
+/* line 49, ../scss/components/_carousel.scss */
 .carousel-aside .carousel-control-prev span:hover, .carousel-aside .carousel-control-next span:hover {
   background-color: #02baab;
 }
-/* line 51, ../scss/components/_carousel.scss */
+/* line 52, ../scss/components/_carousel.scss */
 .carousel-aside .carousel-control-prev span:hover:before, .carousel-aside .carousel-control-next span:hover:before {
   color: #fff;
 }
-/* line 56, ../scss/components/_carousel.scss */
+/* line 57, ../scss/components/_carousel.scss */
 .carousel-aside .carousel-control-prev .carousel-control-next-icon:before, .carousel-aside .carousel-control-prev .carousel-control-prev-icon:before, .carousel-aside .carousel-control-next .carousel-control-next-icon:before, .carousel-aside .carousel-control-next .carousel-control-prev-icon:before {
   color: #02baab;
 }
-/* line 61, ../scss/components/_carousel.scss */
+/* line 62, ../scss/components/_carousel.scss */
 .carousel-aside .carousel-inner-aside {
   height: auto;
   min-height: 0;
 }
 
-/* line 67, ../scss/components/_carousel.scss */
+/* line 68, ../scss/components/_carousel.scss */
 .full-height {
   height: 100% !important;
 }
 
-/* line 73, ../scss/components/_carousel.scss */
+/* line 74, ../scss/components/_carousel.scss */
 .portfolio-carousel .carousel-control-prev, .carousel-aside .carousel-control-prev, .portfolio-carousel .carousel-control-next, .carousel-aside .carousel-control-next {
   opacity: 1;
 }
-/* line 77, ../scss/components/_carousel.scss */
+/* line 78, ../scss/components/_carousel.scss */
 .portfolio-carousel .carousel-control-prev-icon, .carousel-aside .carousel-control-prev-icon, .portfolio-carousel .carousel-control-next-icon, .carousel-aside .carousel-control-next-icon {
   width: 40px;
   height: 40px;
@@ -339,7 +340,7 @@ button:hover {
   position: relative;
   background-image: none !important;
 }
-/* line 85, ../scss/components/_carousel.scss */
+/* line 86, ../scss/components/_carousel.scss */
 .portfolio-carousel .carousel-control-prev-icon:before, .carousel-aside .carousel-control-prev-icon:before, .portfolio-carousel .carousel-control-next-icon:before, .carousel-aside .carousel-control-next-icon:before {
   background: none;
   content: "\f104";
@@ -354,15 +355,15 @@ button:hover {
   text-align: center;
   line-height: 40px;
 }
-/* line 100, ../scss/components/_carousel.scss */
+/* line 101, ../scss/components/_carousel.scss */
 .portfolio-carousel .carousel-control-prev-icon:hover, .carousel-aside .carousel-control-prev-icon:hover, .portfolio-carousel .carousel-control-next-icon:hover, .carousel-aside .carousel-control-next-icon:hover {
   background-color: orange;
 }
-/* line 101, ../scss/components/_carousel.scss */
+/* line 102, ../scss/components/_carousel.scss */
 .portfolio-carousel .carousel-control-prev-icon:hover:before, .carousel-aside .carousel-control-prev-icon:hover:before, .portfolio-carousel .carousel-control-next-icon:hover:before, .carousel-aside .carousel-control-next-icon:hover:before {
   color: #fff;
 }
-/* line 110, ../scss/components/_carousel.scss */
+/* line 111, ../scss/components/_carousel.scss */
 .portfolio-carousel .carousel-control-next-icon:before, .carousel-aside .carousel-control-next-icon:before {
   content: "\f105";
 }
@@ -783,7 +784,7 @@ button:hover {
   font: 300 1.13rem/1.5rem "Oxygen", sans-serif;
   margin-top: 1rem;
 }
-/* line 59, ../scss/components/_circle-list.scss */
+/* line 60, ../scss/components/_circle-list.scss */
 .expirience-container .expirience-list ~ .expirience-list .circe-big:before {
   width: 4.4rem;
   height: .7rem;
@@ -1703,28 +1704,77 @@ a {
   }
 
   /* line 27, ../scss/media/_laptop.scss */
-  .wp-purchase-section {
-    background-color: #02baab;
-    padding: 3rem 0;
+  .cards {
+    margin-bottom: 20px;
   }
   /* line 31, ../scss/media/_laptop.scss */
+  .cards-content {
+    max-width: 290px;
+    text-align: center;
+  }
+
+  /* line 37, ../scss/media/_laptop.scss */
+  .features-info {
+    margin-left: 30px;
+  }
+
+  /* line 42, ../scss/media/_laptop.scss */
   .wp-purchase-section .row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
   }
 
-  /* line 38, ../scss/media/_laptop.scss */
+  /* line 50, ../scss/media/_laptop.scss */
   .expirience-container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
   }
 
-  /* line 44, ../scss/media/_laptop.scss */
+  /* line 56, ../scss/media/_laptop.scss */
+  .expirience-list ~ .expirience-list {
+    margin-top: 100px;
+  }
+  /* line 58, ../scss/media/_laptop.scss */
+  .expirience-list ~ .expirience-list .circe-big:before {
+    width: 4.4rem;
+    height: .7rem;
+    content: '';
+    transform: rotate(90deg);
+    position: absolute;
+    top: -60px;
+    left: 66px;
+    background: url("../../images/dots.png") center center no-repeat;
+  }
+
+  /* line 70, ../scss/media/_laptop.scss */
   .team-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 2, ../scss/media/_mobile.scss */
+  .expirience-list {
+    max-width: 300px;
+  }
+
+  /* line 6, ../scss/media/_mobile.scss */
+  .expirience-list ~ .expirience-list {
+    margin-top: 100px;
+  }
+  /* line 9, ../scss/media/_mobile.scss */
+  .expirience-list ~ .expirience-list .circe-big:before {
+    width: 4.4rem;
+    height: .7rem;
+    content: '';
+    transform: rotate(90deg);
+    position: absolute;
+    top: -60px;
+    left: 66px;
+    background: url("../../images/dots.png") center center no-repeat;
   }
 }

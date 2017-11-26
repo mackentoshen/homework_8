@@ -24,13 +24,25 @@
 
 ////////////////////////////SECTIONS////////////////////////////
 
-  .wp-purchase-section {
-    background-color: $turquoise;
-    padding: 3rem 0;
+  .cards {
+    margin-bottom: 20px;
+    //text-align: center;
 
+    &-content {
+      max-width: 290px;
+      text-align: center;
+    }
+  }
+
+  .features-info {
+    margin-left: 30px;
+  }
+
+  .wp-purchase-section {
     .row {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      flex-wrap: wrap;
       align-items: center;
     }
   }
@@ -39,6 +51,20 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+  }
+
+  .expirience-list ~ .expirience-list {
+    margin-top: 100px;
+    .circe-big:before {
+      width: 4.4rem;
+      height: .7rem;
+      content: '';
+      transform: rotate(90deg);
+      position: absolute;
+      top: -60px;
+      left: 66px;
+      background: url("../../images/dots.png") center center no-repeat;
+    }
   }
 
   .team-container {
