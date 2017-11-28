@@ -4,6 +4,11 @@
 
 @media only screen and (max-width: 992px) {
 
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
   /////////////////////////// HEADER /////////////////////
   .header-top {
     .row {
@@ -23,6 +28,23 @@
   }
 
 ////////////////////////////SECTIONS////////////////////////////
+
+  .grid-content-top {
+    padding: 5rem 0 3.13rem;
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+
+  .user-list {
+    flex-wrap: wrap;
+    //margin-bottom: 1rem;
+  }
+
 
   .cards {
     margin-bottom: 20px;
@@ -73,6 +95,24 @@
     flex-wrap: wrap;
   }
 
+
+  .posts-area {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .blog-text-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+
+    .blog-text-img {
+      .img-fluid {
+        margin: .5rem;
+      }
+    }
+  }
 ///////////////////////////FOOTER//////////////////////////////
 
 

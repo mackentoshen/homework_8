@@ -3,7 +3,8 @@
   padding: 3.13rem 0;
 
   .img-fluid {
-    margin-bottom: 3.13rem;
+    display: block;
+    margin: 0 auto 3.13rem;
   }
 
   .blog-text-wrapper {
@@ -89,8 +90,7 @@
 
     .categories-list {
       border-bottom: 1px solid $grey;
-      //display: flex;
-      //align-items: center;
+
 
       &:last-child {
         border: none;
