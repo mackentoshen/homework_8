@@ -1798,6 +1798,11 @@ a {
   .blog-text-cards .blog-text-img .img-fluid {
     margin: .5rem;
   }
+
+  /* line 117, ../scss/media/_laptop.scss */
+  .portfolio-social-list {
+    margin-bottom: 2rem;
+  }
 }
 @media only screen and (max-width: 768px) {
   /* line 3, ../scss/media/_tablet.scss */
@@ -1819,6 +1824,11 @@ a {
     justify-content: center;
     align-items: center;
     margin-bottom: 1.5rem;
+  }
+
+  /* line 33, ../scss/media/_tablet.scss */
+  .portfolio-social-list {
+    margin-bottom: 2rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1859,5 +1869,10 @@ a {
   .comments-form .col-sm-12 {
     padding: 0;
     margin-bottom: 1rem;
+  }
+
+  /* line 39, ../scss/media/_mobile.scss */
+  .portfolio-social-list {
+    margin-bottom: 2rem;
   }
 }
